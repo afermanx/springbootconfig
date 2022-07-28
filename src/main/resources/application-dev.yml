@@ -1,0 +1,11 @@
+#DEV environment
+
+app:
+  message: This is a the property file fo the ${spring.application.name} application specific to DEV environment
+
+spring:
+  datasource:
+  driver-class-name: org.h2.Driver
+  url: jdbc:h2:mem:${spring.application.name};DB_CLOSE_DELAY=-1
+  username: sa
+  password: sa
